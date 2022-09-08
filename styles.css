@@ -46,6 +46,10 @@ body{
     padding: 10px 5px;
     border-bottom: 1px solid #fff;
     background-color: #fff;
+    position: sticky;
+    top: 0;right: 0;
+    z-index: 9999;
+    width: 100%;
 }
 
 .header .left-nav {
@@ -163,6 +167,8 @@ body{
     width: 20%;
     overflow-y: hidden;
     height: 70vh;
+    position: fixed;
+    left: 0;
 }
 
 .left-sidebar:hover{
@@ -489,7 +495,8 @@ body{
 .right-sidebar{
     padding-inline: 5px;
     width: 20%;
-    
+    position: fixed;
+    right: 0;
 }
 
 
