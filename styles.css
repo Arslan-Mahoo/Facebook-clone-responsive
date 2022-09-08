@@ -161,8 +161,12 @@ body{
 
 .left-sidebar{
     width: 20%;
-    overflow-y: scroll;
+    overflow-y: hidden;
     height: 70vh;
+}
+
+.left-sidebar:hover{
+    overflow-y: scroll;
 }
 
 ::-webkit-scrollbar{
@@ -375,7 +379,7 @@ body{
 .main .central-content .tweet-section .tweet-top input{
     width: 90%;
     padding: 10px;
-    background-color: #ccc;
+    background-color: #eee;
     border: 0;
     outline: 0;
     font-size: medium;
@@ -626,6 +630,17 @@ body{
         width: 100%;
     }
 
+    .main .central-content .top-section{
+        background-color: #fff;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .main .central-content .post-section {
+        width: 100%;
+        border-radius: 8px;
+    }
+
     .main .central-content{
         margin: auto;
         width: 100%;
@@ -653,6 +668,9 @@ body{
         left: 20px;
     }
 
+    .main .central-content .tweet-section{
+        width: 100%;
+    }
     
     .main .central-content .tweet-section .tweet-top input{
         
