@@ -108,8 +108,6 @@ body{
     align-items: center;
     justify-content: center;
     padding: 10px 40px;
-    
-   
     border-radius: 8px;
     margin: 0px 10px;
     cursor: pointer;
@@ -145,6 +143,18 @@ body{
     padding: 10px;
 }
 
+
+
+.header .right-nav ul li i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .right-nav ul li.hidden{
+    display: none;
+}
+
 .header .right-nav ul li:hover{
     background-color: #eee;
 }
@@ -167,8 +177,6 @@ body{
     width: 20%;
     overflow-y: hidden;
     height: 70vh;
-    position: fixed;
-    left: 0;
 }
 
 .left-sidebar:hover{
@@ -279,6 +287,22 @@ body{
    
 }
 
+.main .central-content .story-wrapper .story .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: #111;
+    z-index: 997;
+    opacity: 0;
+}
+
+.main .central-content .story-wrapper .story:hover .overlay{
+    opacity: .3;
+}
+
 .main .central-content .story-wrapper .story{
     border: 1px solid;
     background-position: center;
@@ -294,8 +318,10 @@ body{
     outline: 0;
     overflow: hidden;
     transition: all .3s ease-in;
-
+    
 }
+
+
 
 .main .central-content .story-wrapper .story:hover .story-cover{
     transform: scale(1.05);
@@ -495,8 +521,7 @@ body{
 .right-sidebar{
     padding-inline: 5px;
     width: 20%;
-    position: fixed;
-    right: 0;
+    
 }
 
 
@@ -602,8 +627,14 @@ body{
     .main .central-content{
         width: 70%;
         padding: 10px;
-        
+       justify-content: start;
     }
+
+    .header .right-nav ul li.hidden{
+        display: block;
+    }
+
+    
 
     .main .central-content .story-wrapper{
         justify-content: space-between;
