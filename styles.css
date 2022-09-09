@@ -44,7 +44,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 5px;
+    padding: 5px;
     border-bottom: 1px solid #fff;
     background-color: #fff;
     position: sticky;
@@ -116,10 +116,64 @@ body{
     border-radius: 8px;
     margin: 0px 10px;
     cursor: pointer;
+    position: relative;
 }
 
 .header .mid-nav ul li:hover{
     background-color: #eee;
+}
+
+.header .mid-nav ul li.home:hover::after{
+    content: 'Home';
+    background-color: #111;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 5px 0;
+    border-radius: 7px;
+    color: #fff;
+    position: absolute;
+    bottom: -40px;
+    
+}
+.header .mid-nav ul li.watch:hover::after{
+    content: 'Watch';
+    background-color: #111 ;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 5px 0;
+    border-radius: 7px;
+    color: #fff;
+    position: absolute;
+    bottom: -40px;
+    
+}
+.header .mid-nav ul li.friends:hover::after{
+    content: 'friends';
+    background-color: #111;
+    width: 80%; 
+    text-align: center;
+    margin: auto;
+    padding: 5px 0;
+    border-radius: 7px;
+    color: #fff;
+    position: absolute;
+    bottom: -40px;
+    
+}
+.header .mid-nav ul li.gaming:hover::after{
+    content: 'Gaming';
+    background-color: #111;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 5px 0;
+    border-radius: 7px;
+    color: #fff;
+    position: absolute;
+    bottom: -40px;
+    
 }
 
 .user-avatar{
@@ -182,7 +236,7 @@ body{
 .left-sidebar{
     width: 20%;
     overflow-y: hidden;
-    height: 70vh;
+    height: 80vh;
     position: fixed;
     left: 0;
 }
@@ -216,6 +270,24 @@ body{
     margin-left: 5%;
     font-weight: 300;
 }
+
+.left-sidebar .row-hide.show{
+    display: flex;
+}
+
+.left-sidebar .sidebar-row i.fa-caret-down,
+.left-sidebar .sidebar-row i.fa-caret-up{
+    padding: 3px 5px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.left-sidebar .row-hide{
+    display: none;
+}
+
+
+
 
 .left-sidebar .sidebar-row:hover{
     background-color: #ddd;
@@ -439,7 +511,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 10px;
+    padding: 5px ;
     border-radius: 8px;
     cursor: pointer;
     transform: all .4s;
@@ -449,7 +521,7 @@ body{
 
 
 .main .central-content .tweet-section .tweet-bottom .tweet-option:hover{
-    background-color: #ccc;
+    background-color: #eee;
 }
 
 .main .central-content .tweet-section .tweet-bottom .tweet-option p{
@@ -482,6 +554,19 @@ body{
     display: flex;
     align-items: center;
     padding: 10px;
+    position: relative;
+}
+
+.main .central-content .post-section .post .post-top .dots{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.main .central-content .post-section .post .post-top .dots:hover{
+    background-color: #eee;
 }
 
 .main .central-content .post-section .post .post-top .user-info h6{
