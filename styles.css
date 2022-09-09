@@ -595,7 +595,7 @@ body{
 
 .main .central-content .post-section .post .post-bottom .reacts .react-option:hover{
     transform: scale(1.2);
-    background-color: #aaa;
+    background-color: #eee;
 }
 
 .main .central-content .post-section .post .post-bottom .reacts .react-option{
